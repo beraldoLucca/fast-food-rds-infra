@@ -28,11 +28,8 @@ jobs:
       - name: Install Terraform
         uses: hashicorp/setup-terraform@v3
 
-      - name: Init Terraform
-        run: terraform init
-
-      - name: Create execution plan
-        run: terraform plan
-
-      - name: Apply Infrastructure
-        run: terraform apply -auto-approve
+      - name: Apply Terraform
+        run: |
+          cd rds-infra/
+          terraform init
+          terraform apply -auto-approve
