@@ -34,9 +34,9 @@ jobs:
           terraform init
           terraform apply -auto-approve
 
-      - name: Dispatches Deploy on Lambda Repository
-        run: |
-          curl -X POST -H "Authorization: token ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}" \
-          -H "Accept: application/vnd.github.v3+json" \
-          https://api.github.com/repos/beraldoLucca/fast-food-lambda/actions/workflows/deploy.yml/dispatches \
-          -d '{"ref":"main"}'
+      # - name: Dispatches Deploy on Lambda Repository
+      #   run: |
+      #     curl -X POST -H "Authorization: token ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}" \
+      #     -H "Accept: application/vnd.github.v3+json" \
+      #     https://api.github.com/repos/beraldoLucca/fast-food-lambda/actions/workflows/deploy.yml/dispatches \
+      #     -d '{"ref":"main"}'
