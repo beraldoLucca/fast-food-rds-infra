@@ -1,9 +1,7 @@
 name: Deploy RDS with Terraform
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 
 permissions:
