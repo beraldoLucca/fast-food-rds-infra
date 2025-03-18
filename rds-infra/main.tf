@@ -1,5 +1,5 @@
 resource "aws_db_instance" "rds" {
-  identifier            = "fast-food-rds"
+  identifier            = "fast-food-rds-2"
   allocated_storage     = 20
   storage_type          = "gp2"
   engine               = var.db_engine
