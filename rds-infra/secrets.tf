@@ -1,5 +1,5 @@
 resource "aws_secretsmanager_secret" "rds_secret" {
-  name = "rds-credentials-10"
+  name = "rds-credentials-11"
 }
 
 resource "aws_secretsmanager_secret_version" "rds_secret_version" {
