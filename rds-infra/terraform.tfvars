@@ -1,3 +1,5 @@
 db_name = "fastfoodrds"
 db_username = "dbadmin"
 db_password = "dbadmin123"
+rds_sg_id = "sg-0318ebd31e822438c"
+eks_sg_id = "sg-0318ebd31e822438c"

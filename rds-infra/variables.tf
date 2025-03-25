@@ -37,3 +37,13 @@ variable "db_engine_version" {
   type        = string
   default     = "14.14"
 }
+
+variable "rds_sg_id" {
+  description = "RDS Security Group"
+  type        = string
+}
+
+variable "eks_sg_id" {
+  description = "EKS Security Group"
+  type        = string
+}
